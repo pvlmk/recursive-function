@@ -38,7 +38,10 @@ const Contents: React.FC<Props> = ({
   const history = useHistory();
   const isMobileScreen = !useScreenWidth(1024);
 
-  useBodyOverflow(null, null);
+  React.useEffect(() => {
+    useBodyOverflow("hidden");
+    return () => useBodyOverflow(null, false);
+  }, []);
 
   function visitOnEnter() {
     history.push(`/articles/${selectedId}`);

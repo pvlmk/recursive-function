@@ -1,8 +1,9 @@
+@import "../../assets/styles/media-queries.scss";
+
 .article {
   padding-top: 100px;
 
   &__hero {
-    margin: 80px 0;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -14,5 +15,17 @@
     font-size: 70px;
     margin-bottom: 40px;
     text-transform: uppercase;
+  }
+
+  @include xs {
+    &__hero {
+      margin: 35px 0;
+    }
+  }
+
+  @include lg {
+    &__hero {
+      margin: 80px 0;
+    }
   }
 }

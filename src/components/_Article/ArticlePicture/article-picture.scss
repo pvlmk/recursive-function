@@ -1,0 +1,18 @@
+@import "../../../assets/styles/media-queries.scss";
+
+.article-picture {
+  margin: 20px auto;
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  @include xs {
+    height: auto;
+    width: 75%;
+  }
+  @include lg {
+    height: max-content;
+    width: max-content;
+  }
+}

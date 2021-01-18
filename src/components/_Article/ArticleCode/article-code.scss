@@ -1,17 +1,30 @@
+@import "../../../assets/styles/media-queries.scss";
+
 .article-code {
   &__pre {
     background: #333;
     border-radius: 4px;
-    margin: 20px 120px;
+
     overflow: auto;
     white-space: pre;
     word-wrap: break-word;
-    padding: 25px 0 25px 40px;
+    padding: 25px 40px 25px 40px;
   }
 
   &__code {
     color: #fff;
     font-family: "Roboto Mono";
     font-size: 15px;
+  }
+
+  @include xs {
+    &__pre {
+      margin: 20px;
+    }
+  }
+  @include md {
+    &__pre {
+      margin: 20px 120px;
+    }
   }
 }

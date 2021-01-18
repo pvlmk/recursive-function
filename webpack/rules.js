@@ -6,7 +6,7 @@ const images = {
     {
       loader: "url-loader",
       options: {
-        limit: 8000,
+        limit: 10 * 1024,
         name: "[name].[ext]",
         outputPath: "assets/img",
         publicPath: "../assets/img",

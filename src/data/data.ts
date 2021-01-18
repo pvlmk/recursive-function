@@ -28,7 +28,7 @@ const data: DataElement[] = [
     title: "Currying",
   },
   {
-    content: [{ selector: "", text: "" }],
+    content: article02,
     isArticle: true,
     isSpotlight: true,
     id: "02",
@@ -38,7 +38,7 @@ const data: DataElement[] = [
     title: "Pure",
   },
   {
-    content: [{ selector: "", text: "" }],
+    content: article03,
     isArticle: true,
     isSpotlight: true,
     id: "03",

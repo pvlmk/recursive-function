@@ -1,7 +1,10 @@
 import * as React from "react";
+
 import ArticleCode from "../../components/_Article/ArticleCode/ArticleCode";
 import ArticleCover from "../../components/_Article/ArticleCover/ArticleCover";
+import ArticleEndLine from "../../components/_Article/ArticleEndLine/ArticleEndLine";
 import ArticleParagraph from "../../components/_Article/ArticleParagraph/ArticleParagraph";
+import ArticlePicture from "../../components/_Article/ArticlePicture/ArticlePicture";
 import ArticleSubTitle from "../../components/_Article/ArticleSubTitle/ArticleSubTitle";
 
 import "./article.scss";
@@ -39,6 +42,13 @@ function contentSwitcher(
       return (
         <ArticleCode key={keyCreator(index, selector)}>{text}</ArticleCode>
       );
+    case "img":
+      return (
+        <ArticlePicture
+          key={keyCreator(index, selector)}
+          image={typeof text === "string" && text}
+        />
+      );
     default:
       break;
   }
@@ -56,6 +66,7 @@ function ArticleUI({ content, id, image, title }: Props) {
           contentSwitcher(index, selector, text)
         )}
       </div>
+      <ArticleEndLine />
     </div>
   );
 }

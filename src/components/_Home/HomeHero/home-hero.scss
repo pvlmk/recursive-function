@@ -6,7 +6,6 @@
   &__text {
     display: block;
     font-family: "Arial";
-    font-size: 100px;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -35,6 +34,10 @@
   @include xs {
     position: relative;
 
+    &__text {
+      font-size: 50px;
+    }
+
     &__image {
       object-position: 42% center;
     }
@@ -54,6 +57,10 @@
   }
 
   @include sm {
+    &__text {
+      font-size: 80px;
+    }
+
     &__image {
       object-position: 34% center;
     }
@@ -64,6 +71,9 @@
   }
 
   @include md {
+    &__text {
+      font-size: 100px;
+    }
   }
 
   @include lg {

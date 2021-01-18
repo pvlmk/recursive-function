@@ -11,7 +11,7 @@ interface Props {
 type StateProps = Pick<Props, "isAsideOpen">;
 
 const HeaderAside: React.FC<Props> = ({ isAsideOpen }: Props) => {
-  useBodyOverflow(null, isAsideOpen);
+  React.useEffect(() => useBodyOverflow(null, isAsideOpen), [isAsideOpen]);
 
   return <HeaderAsideUI isAsideOpen={isAsideOpen} />;
 };
