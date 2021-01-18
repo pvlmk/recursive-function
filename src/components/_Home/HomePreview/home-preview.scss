@@ -1,0 +1,33 @@
+@import "../../../assets/styles/media-queries.scss";
+
+.home-preview {
+  background: url("../../../assets/img/home-cover-01.jpg");
+  color: #ffffff;
+  padding: 0;
+  width: 90vw;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  &__text {
+    font-family: "Arial";
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+
+  @include xs {
+    &__text {
+      font-size: 50px;
+    }
+  }
+
+  @include lg {
+    &__text {
+      font-size: 100px;
+    }
+  }
+}

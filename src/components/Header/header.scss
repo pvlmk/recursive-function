@@ -1,0 +1,17 @@
+@import "/src/assets/styles/media-queries.scss";
+
+.header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__original-logo {
+    position: fixed;
+  }
+}

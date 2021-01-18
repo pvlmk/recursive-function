@@ -1,0 +1,35 @@
+@import "/src/assets/styles/media-queries.scss";
+
+.header-menu {
+  border: 1px solid #000000;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 0 12.5px;
+  z-index: 9998;
+  position: absolute;
+
+  &__text {
+    font-family: "Arial";
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  @include xs {
+    &__text {
+      font-size: 18px;
+    }
+  }
+  @include sm {
+    &__text {
+      font-size: 20px;
+    }
+  }
+  @include md {
+    &__text {
+      font-size: 22px;
+    }
+  }
+  @include lg {
+    display: none;
+  }
+}

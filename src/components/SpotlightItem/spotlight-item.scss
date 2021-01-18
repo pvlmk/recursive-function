@@ -1,0 +1,15 @@
+.spotlight-item {
+  font-family: "Arial";
+  font-size: 22px;
+  text-transform: uppercase;
+  width: 100%;
+
+  &__number {
+    padding: 0 6px;
+    transition: all 0.25s;
+  }
+
+  &__title {
+    margin-left: 7.5px;
+  }
+}

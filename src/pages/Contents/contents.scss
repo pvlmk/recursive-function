@@ -1,0 +1,97 @@
+@import "../../assets/styles/media-queries.scss";
+
+.contents {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  touch-action: none;
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 1000;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__overlay {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(0.4);
+  }
+
+  &__overlay-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__scroll {
+    z-index: 1000;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+  }
+
+  &__scroll-text {
+    color: white;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+    text-orientation: upright;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+  }
+
+  @include xs {
+    &__list {
+      height: calc(60px * 5);
+    }
+
+    &__scroll {
+      height: 180px;
+      right: 2vw;
+    }
+  }
+  @include sm {
+    &__list {
+      height: calc(70px * 5);
+    }
+    &__scroll {
+      height: 230px;
+      right: 10vw;
+    }
+  }
+  @include md {
+    &__list {
+      height: calc(80px * 5);
+    }
+    &__scroll {
+      right: 12vw;
+    }
+  }
+  @include lg {
+    &__scroll {
+      right: 25vw;
+    }
+  }
+}

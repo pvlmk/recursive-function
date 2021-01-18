@@ -1,0 +1,43 @@
+@import "../../../assets/styles/media-queries.scss";
+
+.list-item {
+  cursor: pointer;
+
+  &__text {
+    color: rgba($color: #ffffff, $alpha: 0.23);
+    font-family: "Arial";
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  @include xs {
+    &__text {
+      font-size: 60px;
+    }
+  }
+
+  @include sm {
+    &__text {
+      font-size: 70px;
+    }
+  }
+
+  @include md {
+    &__text {
+      font-size: 80px;
+    }
+  }
+
+  @include lg {
+    &__text {
+      font-size: 80px;
+    }
+  }
+
+  @include xl {
+    &__text {
+      font-size: 80px;
+    }
+  }
+}

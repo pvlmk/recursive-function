@@ -1,0 +1,15 @@
+@import "/src/assets/styles/media-queries.scss";
+
+.header-aside {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9998;
+
+  &__spotlight-container {
+    margin-top: 150px;
+  }
+}

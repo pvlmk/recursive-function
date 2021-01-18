@@ -1,0 +1,33 @@
+@import "../../assets/styles/media-queries.scss";
+
+.footer {
+  align-items: center;
+  background-color: transparent;
+  bottom: 0;
+  display: flex;
+  font-family: "Courier Prime";
+  justify-content: center;
+  width: 100%;
+  z-index: 1000;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
+    width: 40%;
+    font-size: 12px;
+  }
+
+  @include xs {
+    height: 80px;
+  }
+
+  @include lg {
+    height: 100px;
+  }
+}

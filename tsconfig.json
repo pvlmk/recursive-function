@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "ESNEXT",
+    "moduleResolution": "Node",
+    "outDir": "./dist/",
+    "target": "ES5",
+  }
+}
